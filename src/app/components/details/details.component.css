@@ -1,0 +1,14 @@
+.ingredient-line {
+    white-space: normal;
+    height:500px;
+    line-height: 0.8; /* Adjust line height for better readability */
+  }
+
+  .mat-list-item span {
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    max-width: 100%;
+  }
+  
+  

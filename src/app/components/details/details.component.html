@@ -1,0 +1,43 @@
+<div *ngIf="detail" style="margin-top: 80px;">
+  <mat-grid-list cols="3" rowHeight="650px">
+    <mat-grid-tile colspan="1.5" style="height:365px">
+        <img 
+          src="{{detail.image}}"
+          style="object-fit: cover; width: 100%; height: 100%;" 
+        />
+      </mat-grid-tile>
+
+
+<mat-grid-tile  style="height:365px">
+        
+<div>
+    <div style="margin-left: 16px;">
+         <span matListItemTitle><h1 style="font-weight: bolder;">{{detail.name}}</h1></span>
+         <span matListItemTitle style="margin-top: 0px;"><h3 style="font-weight: bolder;">Ingredients</h3></span>
+    <p style="font-size: clamp(10px,2vw,14px); ">{{detail.ingredients}}</p>
+    </div> 
+    
+    <div style="margin-left: 16px;">
+      <span matListItemTitle><h3 style="font-weight: bolder;">Recipe</h3></span>
+ <p style="padding:2px;font-size: clamp(10px,2vw,14px);">{{detail.instructions}}</p>
+ </div> 
+
+ <div style="margin-left: 16px;">
+  <span matListItemTitle><h3 style="font-weight: bolder;">Calories</h3></span>
+<p style="padding:2px;font-size: clamp(10px,2vw,14px);">{{detail.caloriesPerServing}} per serving</p>
+</div> 
+
+
+</div>
+</mat-grid-tile>
+
+
+  
+  
+  
+  
+  </mat-grid-list>
+</div>
+
+    
+  
